@@ -32,7 +32,7 @@ Installation:
 Clone the repository:
 
 
-git clone https://github.com/yourusername/event-organizer.git
+git clone https://github.com/Siraj617/ultrapro.git
 
 Navigate to the project directory:
 
