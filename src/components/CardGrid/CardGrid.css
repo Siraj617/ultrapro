@@ -10,7 +10,7 @@
 .card-title {
   color: yellow; /* Set color to yellow */
   text-align: left; /* Align to left */
-  margin-top: 5%; /* Add top margin for spacing */
+  margin-top: 5%; /* Change top margin to 5% */
 }
 
 .card-subtitle {
@@ -97,30 +97,35 @@ p {
 /* For tablets and mobile devices */
 @media (max-width: 768px) {
   .card {
-      flex: 1 1 100%; /* Full width */
+    flex: 1 1 100%; /* Full width */
   }
 
   .card-inner {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center the items horizontally */
-      text-align: center; /* Center the text */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items horizontally */
+    text-align: center; /* Center the text */
   }
 
   .left, .right {
-      flex: none; /* Remove flex-grow/shrink */
-      width: 100%; /* Full width for both sections */
-      padding: 0; /* Remove padding */
+    flex: none; /* Remove flex-grow/shrink */
+    width: 100%; /* Full width for both sections */
+    padding: 0; /* Remove padding */
   }
 
   .circle {
-      margin: 0 auto; /* Center the circle horizontally */
+    margin: 0 auto; /* Center the circle horizontally */
   }
 
   h2 {
-      margin: 10px 0; /* Adjust margin for better spacing */
+    margin: 10px 0; /* Adjust margin for better spacing */
   }
 
   p {
-      margin: 0; /* Remove margin to keep text tight */
+    margin: 0; /* Remove margin to keep text tight */
+  }
+
+  /* Specific style for card-title on mobile */
+  .card-title {
+    margin-top: 45%; /* Ensure 5% top margin on mobile */
   }
 }
