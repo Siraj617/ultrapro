@@ -1,0 +1,172 @@
+.event-planner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent horizontal scrolling */
+    margin-right: 20px;
+  }
+  
+  .left-content {
+    flex: 1 1 45%; /* Allow left content to take 45% of the width but be flexible */
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #f9a85e;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-get-started {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .btn-learn-more {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9a85e;
+    color: #000;
+  }
+  
+  .right-content {
+    flex: 1 1 45%; /* Allow right content to take 45% of the width but be flexible */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Add gap between service items */
+    flex-wrap: wrap; /* Allow wrapping of service items */
+  }
+  
+  .service-item {
+    flex: 1 1 30%; /* Each service item takes 30% of the width */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px; /* Add margin below each service item */
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f9a85e;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .event-planner-container {
+      flex-direction: column; /* Stack columns on tablet view */
+      align-items: center; /* Center align */
+    }
+  
+    .left-content {
+      width: 100%; /* Full width on smaller screens */
+      padding-left: 0; /* Remove padding */
+      text-align: center; /* Center text */
+    }
+  
+    .right-content {
+      width: 100%; /* Full width on smaller screens */
+      margin-top: 20px; /* Add margin for spacing */
+    }
+  
+    .title {
+      font-size: 2rem; /* Adjust font size for the title */
+    }
+  
+    .buttons {
+      flex-direction: row; /* Stack buttons vertically */
+      justify-content: center;
+    }
+  
+    .iframe {
+      height: 250px; /* Adjust iframe height */
+    }
+  
+    .services-list {
+      flex-direction: column; /* Stack service items vertically */
+      align-items: center; /* Center align items */
+      width: 100%; /* Full width for services list */
+    }
+  
+    .service-item {
+      width: 90%; /* Limit width for service items */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.8rem; /* Further adjust font size for smaller screens */
+      margin-top: 40%;
+    }
+  
+    .buttons {
+      gap: 10px; /* Reduce gap between buttons */
+    }
+  
+    .iframe {
+      height: 200px; /* Adjust iframe height for mobile */
+    }
+  
+    .service-title {
+      font-size: 1.2rem; /* Adjust title size for services */
+      text-align: center;
+    }
+  
+    .services-list {
+      width: 100%; /* Full width for service items on mobile */
+      padding: 0 10%; /* Add some padding for aesthetics */
+    }
+  
+    .service-item {
+      width: 100%; /* Full width for each service item */
+    }
+  }
+  

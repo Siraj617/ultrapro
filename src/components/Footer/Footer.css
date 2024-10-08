@@ -1,0 +1,88 @@
+/* General Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    flex: 1 1 20%;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Footer Columns */
+.footer-columns {
+    display: flex;
+    flex: 1 1 75%;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 30px; /* Increased right margin for spacing */
+}
+
+.footer-column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    color: #ff6600;
+    margin-bottom: 15px; /* Increased margin bottom for header */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px; /* Increased margin bottom for list items */
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px; /* Increased margin for bottom spacing */
+    }
+}
