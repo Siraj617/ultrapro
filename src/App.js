@@ -65,11 +65,11 @@ const App = () => {
             objectFit: 'cover',
           }}
         />
-        <h6 className="subheading" style={{ position: 'relative', zIndex: 1 }}>Best Event Organizer</h6>
-        <h1 className="main-heading" style={{ position: 'relative', zIndex: 1 }}>Unforgettable</h1>
-        <h1 className="main-heading" style={{ position: 'relative', zIndex: 1 }}>Events Organizing</h1>
-        <h6 className="description" style={{ position: 'relative', zIndex: 1 }}>Lorem ipsum dolor sit amet...</h6>
-        <button className="service-button" style={{ position: 'relative', zIndex: 1 }}>Our Services</button>
+      <h6 className="subheading" style={{ position: 'relative', zIndex: 1, fontFamily: 'Georgia, serif' }}>Best Event Organizer</h6>
+        <h1 className="main-heading" style={{ position: 'relative', zIndex: 1, fontFamily: 'Georgia, serif' }}>Unforgettable</h1>
+        <h1 className="main-heading" style={{ position: 'relative', zIndex: 1, fontFamily: 'Georgia, serif' }}>Events Organizing</h1>
+        <h6 className="description" style={{ position: 'relative', zIndex: 1, fontFamily: 'Georgia, serif' }}>Lorem ipsum dolor sit amet...</h6>
+        <button className="service-button" style={{ position: 'relative', zIndex: 1, fontFamily: 'Georgia, serif' }}>Our Services</button>
       </div>
 
       <div style={{ marginTop: '20%' }}>
