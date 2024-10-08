@@ -114,4 +114,38 @@
       margin: 0 auto;
     }
   }
+
+  /* Media Queries */
+
+/* For tablets and mobile devices */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Full width */
+  }
+
+  .card-inner {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items horizontally */
+    text-align: center; /* Center the text */
+  }
+
+  .left, .right {
+    flex: none; /* Remove flex-grow/shrink */
+    width: 100%; /* Full width for both sections */
+    padding: 0; /* Remove padding */
+  }
+
+  .circle {
+    margin: 0 auto; /* Center the circle horizontally */
+  }
+
+  h2 {
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  p {
+    margin: 0; /* Remove margin to keep text tight */
+  }
+}
+
   
